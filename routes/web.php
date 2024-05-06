@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
 
     $data = [
         'Home',
@@ -23,4 +23,40 @@ Route::get('/', function () {
     ];
 
     return view('home', compact('data'));
+});
+
+Route::get('/about', function () {
+
+    $data = [
+        'Home',
+        'About',
+        'Help',
+        'Login'
+    ];
+
+    return view('about', compact('data'));
+});
+
+Route::get('/help', function () {
+
+    $data = [
+        'Home',
+        'About',
+        'Help',
+        'Login'
+    ];
+
+    return view('help', compact('data'));
+});
+
+Route::get('/login', function () {
+
+    $data = [
+        'Home',
+        'About',
+        'Help',
+        'Login'
+    ];
+
+    return view('login', compact('data'));
 });

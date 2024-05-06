@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         @foreach($data as $page)
-                        <a class="nav-item nav-link" href="#">{{$page}}</a>
+                        <a class="nav-item nav-link" href="{{ strtolower($page)}}">{{$page}}</a>
                         @endforeach
                     </div>
                 </div>
